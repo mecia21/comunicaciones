@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - CommuniTech</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+
+    <header>
+        <nav>
+           <nav>
+       <div class="logo">
+  <img src="descarga.png" alt="Logo" style="height: 40px;">
+</div>
+              <a href="index.html" class="logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+   <section id="carrusel-nosotros">
+    <h2 class="section-title">👥 Conoce al Equipo</h2>
+    <div class="carousel-container">
+        <div class="carousel">
+            <!-- Participante 1 -->
+              <div class="carousel-item">
+                <div class="carousel-content">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGdB8RSepPpM8QKZUN9WkElRzFpsJ3q-5TctbZ8795xFCOGqyZyW8hwgh1IFtXhtLMYUU&usqp=CAU" alt="Juan Diego Sierra">
+                    <div class="carousel-text">
+                        <h3>Juan Diego Sierra</h3>
+                        <p>Mi nombre es Juan Diego Sierra tengo 17 años, me gusta mucho las motos, jugar videojuegos, juagar futbol y salir con mis amigos. En mis tiempos libres me gusta practicar ingles ademas de aprender cosas nuevas . Tambien me gusta mucho trabajar en equipo y  conversar con mis amigos , soy una persona muy tranquila y que siempre trata de estar feliz y de no dejarse llevar de los problemas. Me encanta escuchar musica y tambien suelo pasar mucho tiempo haciendolo.</p>
+                    </div>
+                </div>
+            </div>
+           
+
+            <!-- Participante 2 -->
+            <div class="carousel-item">
+                <div class="carousel-content">
+                    <img src="julian.webp" alt="Julian Carvallo">
+                    <div class="carousel-text">
+                        <h3>Julian Carvallo</h3>
+                        <p>Soy una persona apasionada por la tecnología y todo lo relacionado con el desarrollo de software. Me gusta aprender cosas nuevas, especialmente en el área de programación y diseño web. También disfruto mucho del fútbol, tanto verlo como jugarlo, ya que me ayuda a mantenerme activo y despejar la mente. Me considero creativo, curioso y con muchas ganas de seguir creciendo, combinando mis intereses personales con mi formación profesional.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Participante 3 -->
+            <div class="carousel-item">
+                <div class="carousel-content">
+                    <img src="keyner.jpg" alt="Keyner Mecia">
+                    <div class="carousel-text">
+                        <h3>Keyner Mecia</h3>
+                        <p>Descripcion: Me llamo Keyner Josmar Mecia Espinoza soy de venezuela tengo 19 años, me apasiona la programación sobretodo el diseño, soy una persona tranquila me gusta mucho el dibujo, escuchar música ya que me ayuda a despejar la mente cuando estoy estresado, me gusta mucho el fútbol es una escapatoria cuando  los estudios me tienen la mente abrumada soy muy fan del fc barcelona es el equipo de mis amores, desde muy pequeño me ha atraído todo lo que tiene que ver la tecnología y al llegar a colombia y se me presentó la oportunidad de estudiar programación la tome porque quiero llegar a ser profesional en esa área.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Participante 4 -->
+            <div class="carousel-item">
+                <div class="carousel-content">
+                    <img src="https://i.pinimg.com/474x/d3/4b/49/d34b496a217cf6ea0dfb0900913cf32a.jpg" alt="María Ruiz">
+                    <div class="carousel-text">
+                        <h3>Brayan Urrutia</h3>
+                        <p>Me llamo BRAYAN MAURICIO URRUTIA MEDRANO tengo 19 años nací en el choco más especifico en Quibdó y actualmente resido en la ciudad de Medellín me apasiona la programación, los videos juegos y las series, se me presentó la oportunidad de estudiar programación y me gustaría poder realizarme como profesional </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botones -->
+        <button class="carousel-btn prev">←</button>
+        <button class="carousel-btn next">→</button>
+    </div>
+</section>
+    <a href="index.html" class="floating-btn">←</a>
+    <script src="scripts.js"></script>
+    <style>
+          /* Botón flotante */
+        .floating-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            box-shadow: 0 5px 20px rgba(255, 107, 107, 0.4);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.6);
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(255, 107, 107, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 107, 107, 0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero p { font-size: 1.2rem; }
+            .nav-links { display: none; }
+            .timeline::after { left: 20px; }
+            .timeline-item { padding-left: 50px; }
+            .timeline-item::after { left: 20px; }
+        }
+        .carousel-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    padding: 2rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    margin: 0 1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.carousel-item img {
+    width: 220px;
+    height: 220px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 4px solid white;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.2);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 50%;
+    z-index: 2;
+    transition: background 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background: rgba(255,255,255,0.4);
+}
+
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
+
+@media (max-width: 768px) {
+    .carousel-item { flex: 0 0 100%; margin: 0; }
+}
+
+   .carousel-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carousel-content img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 4px solid white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.carousel-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.carousel-text h3 {
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.carousel-text p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+/* Carrusel con imagen a la izquierda y texto a la derecha */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    flex-wrap: wrap;
+    max-width: 900px;
+    width: 100%;
+}
+
+.carousel-content img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 4px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.carousel-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.carousel-text h3 {
+    font-size: 1.6rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.carousel-text p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.2);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 50%;
+    z-index: 2;
+    transition: background 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background: rgba(255,255,255,0.4);
+}
+
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
+
+@media (max-width: 768px) {
+    .carousel-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .carousel-content img {
+        margin-bottom: 1rem;
+    }
+
+    .carousel-text {
+        min-width: 100%;
+    }
+}
+
+    </style>
+    <script>
+         // Carrusel de participantes
+document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.querySelector('.carousel');
+    const items = document.querySelectorAll('.carousel-item');
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+    let index = 0;
+
+    function updateCarousel() {
+        const offset = -index * 100;
+        carousel.style.transform = `translateX(${offset}%)`;
+    }
+
+    prevBtn.addEventListener('click', () => {
+        index = (index - 1 + items.length) % items.length;
+        updateCarousel();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        index = (index + 1) % items.length;
+        updateCarousel();
+    });
+
+    updateCarousel();
+});
+// Carrusel funcional
+document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.querySelector('.carousel');
+    const items = document.querySelectorAll('.carousel-item');
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+    let index = 0;
+
+    function updateCarousel() {
+        const offset = -index * 100;
+        carousel.style.transform = `translateX(${offset}%)`;
+    }
+
+    prevBtn.addEventListener('click', () => {
+        index = (index - 1 + items.length) % items.length;
+        updateCarousel();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        index = (index + 1) % items.length;
+        updateCarousel();
+    });
+
+    updateCarousel();
+});
+    </script>
+</body>
+</html>
